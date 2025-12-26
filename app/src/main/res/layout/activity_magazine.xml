@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MagazineActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/availableHotelsTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_rounded_bg"
+            android:padding="16dp"
+            android:text="@string/available_hotels"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hotel1Img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/hotel2Img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/availableHotelsTv"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hotel1" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/hotel1Txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/blue_rounded_bg"
+            android:padding="8dp"
+            android:text="Sharm El Shikh"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/hotel1Img"
+            app:layout_constraintEnd_toEndOf="@id/hotel1Img"
+            app:layout_constraintStart_toStartOf="@id/hotel1Img" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/hotel2Img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/hotel1Img"
+            app:layout_constraintTop_toBottomOf="@id/availableHotelsTv"
+            app:strokeColor="@color/transparent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hotel2" />
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/hotel1Img"
+                android:weightSum="10"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent"
+                    android:layout_weight="6"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="4"
+                    app:cardCornerRadius="16dp"
+                    app:strokeColor="@color/transparent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hotel1" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

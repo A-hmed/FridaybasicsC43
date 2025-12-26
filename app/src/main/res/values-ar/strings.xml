@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أساسيات أندرويد الجمعة c43</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="write_your_email">أدخل بريدك الإلكتروني</string>
+    <string name="write_your_password">أدخل كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+</resources>

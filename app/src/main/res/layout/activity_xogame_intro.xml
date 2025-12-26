@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".XOGameIntro">
+
+    <TextView
+        android:id="@+id/ticTacText"
+        style="@style/white48"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/xo_pattern"
+        android:gravity="center"
+        android:text="Tic Tac Toe"
+        app:layout_constraintHeight_percent=".7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pickWhoGoesFirst"
+        style="@style/white24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Pick who goes first"
+        app:layout_constraintTop_toBottomOf="@id/ticTacText" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/xContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/oContainer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickWhoGoesFirst">
+
+        <TextView
+            style="@style/xStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onPickerClick"
+            android:text="X" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/oContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/xContainer"
+        app:layout_constraintTop_toBottomOf="@id/pickWhoGoesFirst">
+
+        <TextView
+            style="@style/xStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onPickerClick"
+            android:text="O"
+            android:textColor="@color/green" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
