@@ -51,7 +51,3 @@ public class MainActivity extends AppCompatActivity
 
     }
 }
-
-/// Activity - Service - Broadcast Receiver - Content Provider
-
-/// Intent
