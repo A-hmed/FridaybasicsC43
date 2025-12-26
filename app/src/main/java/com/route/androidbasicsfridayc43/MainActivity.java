@@ -35,18 +35,12 @@ public class MainActivity extends AppCompatActivity
         startMagazineBtn = findViewById(R.id.toMagazineButton);
         startHomeBtn = findViewById(R.id.toHomeButton);
         Log.e("MainActivity", "onCreate");
-        startHomeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // open gmail via Intent
-            }
+        startHomeBtn.setOnClickListener(view -> {
+            // open gmail via Intent
         });
-        startMagazineBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent explicitIntent = new Intent(MainActivity.this, MagazineActivity.class);
-                startActivity(explicitIntent);
-            }
+        startMagazineBtn.setOnClickListener(view -> {
+            Intent explicitIntent = new Intent(MainActivity.this, MagazineActivity.class);
+            startActivity(explicitIntent);
         });
 
     }
