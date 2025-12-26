@@ -12,10 +12,10 @@ import androidx.appcompat.app.AppCompatActivity;
 /// Git is a command line tool:
 /// init: Create empty repo.
 /// commit: Save current files into git
-/// branch
-/// switch(checkout)
-/// merge
-/// reset
+/// branch -
+/// switch(checkout) -
+/// merge -
+/// reset -
 /// rebase
 /// reverse
 /// cherry pick
