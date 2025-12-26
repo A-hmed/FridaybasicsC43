@@ -6,4 +6,6 @@
     <string name="write_your_password">Write your password</string>
     <string name="login">Login</string>
     <string name="available_hotels">Available Hotels</string>
+    <string name="welcome">Welcome</string>
+    <string name="More">More</string>
 </resources>
