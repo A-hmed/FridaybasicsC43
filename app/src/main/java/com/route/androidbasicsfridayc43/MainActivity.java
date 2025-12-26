@@ -7,10 +7,11 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+//Git Servers: Github - Gitlab - BitBucket - Azure
 /// Git Gui -> Android studio - Github desktop - Sourcetree - GitKraken
 /// Git is a command line tool:
-/// init
-/// commit
+/// init: Create empty repo.
+/// commit: Save current files into git
 /// branch
 /// switch(checkout)
 /// merge
@@ -21,15 +22,6 @@ import androidx.appcompat.app.AppCompatActivity;
 /// Pull
 /// push
 /// fetch
-
-
-
-
-
-
-
-
-
 
 public class MainActivity extends AppCompatActivity
 {
