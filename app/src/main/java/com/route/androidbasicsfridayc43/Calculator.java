@@ -39,7 +39,6 @@ public class Calculator extends AppCompatActivity {
         }
         savedOperator = clickedOperator.getText().toString();
         resultTv.setText("");
-        Log.e("Calculator", "LHS: " + lhs + " Saved Operator: " + savedOperator);
     }
 
     public void onEqualClick(View v){
@@ -63,7 +62,3 @@ public class Calculator extends AppCompatActivity {
         }
     }
 }
-
-///Syntax
-///Runtime
-///Logical
